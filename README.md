@@ -27,6 +27,4 @@ Responsive Frontend für eine Affiliate-Marketing Plattform für CBD-Produkte mi
 
 ![Screenshot 4 - Artikel](https://github.com/user-attachments/assets/d688c793-5ce3-4e05-b5e1-b41bc238420d)
 
-<br>
-<br>
 ** Dieses Projekt ist im Rahmen eines Onlinekurses zum Thema Wordpress Entwicklung entstanden. Das Content-Management-System (CMS) ist in diesem Repository nicht enthalten.
