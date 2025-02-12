@@ -20,8 +20,9 @@ export default {
 @import "@/variables/Variables.scss";
 
 .blog-info-widget {
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  margin: 0 0 30px 0;
   padding: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 
   & h2 {
     padding-bottom: 10px;
