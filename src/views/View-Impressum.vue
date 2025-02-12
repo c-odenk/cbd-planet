@@ -1,5 +1,5 @@
 <template>
-  <div class="view-landing">
+  <div class="view-impressum">
     <Header />
     <Wallpaper />
     <Impressum />
@@ -14,7 +14,7 @@ import Impressum from "@/components/impressum/Impressum.vue";
 import Footer from "@/components/footer/Footer.vue";
 
 export default {
-  name: "View-Landing",
+  name: "View-Impressum",
   components: {
     Header,
     Wallpaper,
@@ -27,6 +27,6 @@ export default {
 <style lang="scss" scoped>
 @import "@/variables/Variables.scss";
 
-.view-landing {
+.view-impressum {
 }
 </style>

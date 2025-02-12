@@ -25,7 +25,7 @@
 
         <p>
           Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz:
-          DE01/124/31672 <br />
+          DE01/222/33333 <br />
           Finanzamt Bad Neuenahr-Ahrweiler
         </p>
 

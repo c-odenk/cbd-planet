@@ -12,7 +12,7 @@
         <ul>
           <li><router-link to="/#"> Startseite </router-link></li>
           <li><router-link to="/"> Shop </router-link></li>
-          <li><router-link to="/"> Blog </router-link></li>
+          <li><router-link to="/blog"> Blog </router-link></li>
           <li><router-link to="/impressum"> Kontakt </router-link></li>
         </ul>
       </nav>
