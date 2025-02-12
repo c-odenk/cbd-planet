@@ -47,20 +47,30 @@ export default {
   padding: 150px 0px;
   background-color: rgb(46, 194, 158);
 
+  @include respond(tablet) {
+    margin: 50px 0 0 0;
+    padding: 40px 0 50px 0;
+  }
+
   &_col-1 {
     & h2 {
       font-size: 34px;
-      margin-bottom: 30px;
+      margin: 0 0 30px 0;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 1px;
+
+      @include respond(tablet) {
+        margin: 0 0 60px 0;
+      }
     }
 
     & p {
-      font-size: 18px;
-      line-height: 30px;
-      letter-spacing: 0.7px;
       margin: 20px 0 40px 0;
+
+      @include respond(tablet) {
+        margin: 20px 0 30px 0;
+      }
     }
 
     & button {
@@ -69,11 +79,22 @@ export default {
       border: none;
       font-size: 18px;
       border-radius: 0px;
+
+      @include respond(tablet) {
+        display: block;
+        margin: 0 auto;
+      }
     }
 
     & img {
+      display: block;
       max-width: 100%;
       height: auto;
+
+      @include respond(tablet) {
+        width: 60%;
+        margin: 40px auto;
+      }
     }
   }
 

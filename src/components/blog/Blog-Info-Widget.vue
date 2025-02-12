@@ -31,8 +31,7 @@ export default {
   }
 
   & p {
-    // margin-bottom: 8px;
-    // line-height: 30px;
+    margin: 0;
   }
 }
 </style>

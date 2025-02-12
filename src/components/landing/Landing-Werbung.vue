@@ -34,10 +34,19 @@ export default {
       height: 300px;
       transition: all 0.2s;
 
+      @include respond(tablet) {
+        height: 200px;
+      }
+
       &:hover {
         transform: scale(1.01);
       }
     }
+  }
+
+  & .row > * {
+    padding-right: calc(var(--bs-gutter-x) * 0.2);
+    padding-left: calc(var(--bs-gutter-x) * 0.2);
   }
 
   &_col-2 {
@@ -46,6 +55,10 @@ export default {
       max-width: 100%;
       height: 300px;
       transition: all 0.2s;
+
+      @include respond(tablet) {
+        height: 200px;
+      }
 
       &:hover {
         transform: scale(1.01);

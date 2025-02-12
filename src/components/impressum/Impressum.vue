@@ -121,14 +121,25 @@ export default {
 
 .impressum {
   margin: 100px auto 75px auto;
+
+  @include respond(tablet) {
+    margin: 30px auto 25px auto;
+  }
   & h2 {
-    margin-bottom: 40px;
+    margin: 0 0 40px 0;
+
+    @include respond(tablet) {
+      margin: 0 0 20px 0;
+    }
   }
 
   & b {
     display: block;
-    margin-top: 50px;
-    margin-bottom: 10px;
+    margin: 50px 0 10px 0;
+
+    @include respond(tablet) {
+      margin: 30px 0 10px 0;
+    }
   }
 }
 </style>

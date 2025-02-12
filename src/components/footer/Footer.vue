@@ -28,8 +28,6 @@ export default {
     flex-direction: row;
 
     & p {
-      margin: 0;
-      padding: 0;
       color: #fff;
     }
 
@@ -39,9 +37,6 @@ export default {
       list-style: none;
       margin: 0;
       padding: 0;
-
-      & li {
-      }
     }
 
     & a {

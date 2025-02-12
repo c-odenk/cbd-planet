@@ -28,6 +28,14 @@ export default {
 
   position: relative;
 
+  @include respond(tablet) {
+    height: 30vh;
+  }
+
+  @include respond(phone) {
+    height: 20vh;
+  }
+
   &_heading {
     width: 100%;
     position: absolute;
@@ -38,6 +46,10 @@ export default {
 
     & h1 {
       color: #fff;
+
+      @include respond(tablet) {
+        display: none;
+      }
 
       & .main {
         display: block;

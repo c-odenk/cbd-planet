@@ -1,4 +1,46 @@
 /* ==========================================================================
+  SCREEN WIDTH VARIABLES
+========================================================================== */
+
+$width-desktop: 1900px;
+$width-laptop: 90vw;
+$width-tablet: 94vw;
+$width-phone: 95vw;
+
+/* ==========================================================================
+  BREAKPOINTS VARIABLES
+========================================================================== */
+
+$breakpoint-smartphone: 767px;
+$breakpoint-tablet: 1024px;
+$breakpoint-laptop: 1550px;
+
+/* ==========================================================================
+  MEDIA QUERY MANAGER
+========================================================================== */
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: $breakpoint-smartphone) {
+      @content;
+    }
+    // MAX = 767px;
+  }
+  @if $breakpoint == tablet {
+    @media (max-width: $breakpoint-tablet) {
+      @content;
+    }
+    // MAX = 1024px;
+  }
+  @if $breakpoint == laptop {
+    @media (max-width: $breakpoint-laptop) {
+      @content;
+    }
+    // MAX = 1550px;
+  }
+}
+
+/* ==========================================================================
   COLOR VARIABLES
 ========================================================================== */
 

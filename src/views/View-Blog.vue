@@ -62,6 +62,10 @@ export default {
 .view-blog {
   &_row {
     margin: 75px 0;
+
+    @include respond(phone) {
+      margin: 0 0 30px 0;
+    }
   }
 }
 </style>

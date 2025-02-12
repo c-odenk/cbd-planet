@@ -31,32 +31,54 @@ export default {
   padding: 0 0 50px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 
+  @include respond(phone) {
+    margin: 0 0 30px 0;
+    padding: 0 0 30px 0;
+  }
+
   & img {
     width: 100%;
-    height: 320px;
+    height: 350px;
     border-bottom: 5px solid #16a05d;
+
+    @include respond(phone) {
+      height: auto;
+    }
   }
+
   & h2 {
     padding: 50px 40px 20px 40px;
     text-align: left;
     text-decoration: none;
+
+    @include respond(phone) {
+      padding: 20px;
+    }
   }
 
   & p {
     margin: 0 0 30px 0;
     padding: 0px 40px 0 40px;
     text-align: justify;
+
+    @include respond(phone) {
+      padding: 0 20px;
+    }
   }
 
   & a {
     margin: 0;
-    padding: 0px 40px 0 40px;
+    padding: 0px 40px;
     text-decoration: none;
     color: #16a05d;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;
+
+    @include respond(phone) {
+      padding: 0 20px;
+    }
   }
 }
 </style>

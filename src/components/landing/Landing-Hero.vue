@@ -25,7 +25,7 @@
             persönliche Erfahrungen rund um das Thema CBD, findest du in unserem
             Blog.
           </p>
-          <router-link to="/"> zum Blog </router-link>
+          <router-link to="/blog"> zum Blog </router-link>
         </div>
       </div>
     </div>
@@ -44,6 +44,14 @@ export default {
 .landing-hero {
   margin: 150px 0;
 
+  @include respond(tablet) {
+    margin: 50px 0;
+  }
+
+  @include respond(phone) {
+    height: 20vh;
+  }
+
   &_col-1 {
     & img {
       display: block;
@@ -59,6 +67,7 @@ export default {
       padding: 0;
       font-size: 34px;
       line-height: 45px;
+      font-weight: 700;
       text-transform: uppercase;
 
       & .green {
@@ -68,10 +77,11 @@ export default {
 
     & p {
       margin: 30px 0 80px 0;
-      padding: 0;
-      font-size: 18px;
-      line-height: 30px;
       text-align: justify;
+
+      @include respond(tablet) {
+        margin: 20px 0px 50px 0px;
+      }
     }
 
     & a {
@@ -81,6 +91,10 @@ export default {
       font-size: 18px;
       color: #fff;
       background-color: $color-green;
+
+      @include respond(tablet) {
+        padding: 12.5px 45px;
+      }
     }
   }
 }

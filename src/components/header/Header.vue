@@ -36,6 +36,10 @@ export default {
   align-items: center;
   padding: 30px 0px;
 
+  @include respond(tablet) {
+    padding: 20px 0px;
+  }
+
   &_logo {
     & a {
       display: flex;
@@ -51,16 +55,21 @@ export default {
       }
 
       & h5 {
-        margin: 0 30px 0 15px;
+        margin: 0 30px 0 10px;
         padding: 0;
         color: #414042;
         font-size: 30px;
         font-weight: 700;
+        text-transform: uppercase;
       }
     }
   }
 
   &_navigation {
+    @include respond(phone) {
+      display: none;
+    }
+
     & ul {
       display: flex;
       flex-direction: row;
@@ -73,6 +82,10 @@ export default {
           padding: 0px 40px;
           text-decoration: none;
           text-transform: uppercase;
+
+          @include respond(tablet) {
+            padding: 0px 10px;
+          }
           &:hover {
             color: $color-green;
           }
