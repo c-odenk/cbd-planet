@@ -16,6 +16,6 @@ ACHTUNG: Das Projekt wird aktuell grundlegend überarbeitet und daher fortlaufen
 
 ### Screenshot 1 - Landingpage:
 
-![Screenshot 1 - Landingpage](https://github.com/user-attachments/assets/1c56e3ef-4a92-41ff-9eba-4cb8a663bbcf)
+![Bildschirmfoto 2025-02-12 um 02 16 51 (2)](https://github.com/user-attachments/assets/73e6ecf1-ef16-4e3d-b30c-382631ff7724)
 
 \*\* Dieses Projekt ist im Rahmen eines Onlinekurses zum Thema Wordpress Entwicklung entstanden. Das Content-Management-System (CMS) ist in diesem Repository nicht enthalten.
