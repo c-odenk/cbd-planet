@@ -47,6 +47,11 @@ export default {
   padding: 150px 0px;
   background-color: rgb(46, 194, 158);
 
+  @include respond(laptop) {
+    margin: 70px 0 0 0;
+    padding: 90px 0;
+  }
+
   @include respond(tablet) {
     margin: 50px 0 0 0;
     padding: 40px 0 50px 0;

@@ -3,7 +3,7 @@
     <div class="container">
       <div class="landing-beliebt_row-1 row">
         <div class="col-lg-8 offset-lg-2 col-md-12">
-          <h2 id="beliebt">Beliebt <span class="green"> Produkte </span></h2>
+          <h2 id="beliebt">Beliebte <span class="green"> Produkte </span></h2>
           <p>Empfohlene Artikel, die andere Kunden oft erneut kaufen.</p>
         </div>
       </div>
@@ -65,6 +65,10 @@ export default {
 .landing-beliebt {
   margin: 150px 0 150px 0;
 
+  @include respond(laptop) {
+    margin: 100px 0;
+  }
+
   @include respond(tablet) {
     margin: 75px 0;
   }
@@ -94,8 +98,6 @@ export default {
 
   &_row-2 {
     & .card {
-      // margin: 0;
-      // padding: 0;
       border: 1px solid rgba(0, 0, 0, 0.07);
       box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
       text-align: center;

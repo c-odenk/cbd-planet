@@ -59,6 +59,10 @@ export default {
 .landing-sortiment {
   margin: 200px 0 20px 0;
 
+  @include respond(laptop) {
+    margin: 120px 0 15px 0;
+  }
+
   @include respond(tablet) {
     margin: 100px 0 15px 0;
   }

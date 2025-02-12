@@ -44,6 +44,10 @@ export default {
 .landing-hero {
   margin: 150px 0;
 
+  @include respond(laptop) {
+    margin: 100px 0;
+  }
+
   @include respond(tablet) {
     margin: 50px 0;
   }
@@ -79,7 +83,7 @@ export default {
       margin: 30px 0 80px 0;
       text-align: justify;
 
-      @include respond(tablet) {
+      @include respond(laptop) {
         margin: 20px 0px 50px 0px;
       }
     }

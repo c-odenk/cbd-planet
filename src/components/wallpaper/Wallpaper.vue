@@ -28,6 +28,10 @@ export default {
 
   position: relative;
 
+  @include respond(laptop) {
+    height: 60vh;
+  }
+
   @include respond(tablet) {
     height: 30vh;
   }

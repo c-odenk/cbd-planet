@@ -36,7 +36,7 @@ export default {
   align-items: center;
   padding: 30px 0px;
 
-  @include respond(tablet) {
+  @include respond(laptop) {
     padding: 20px 0px;
   }
 
