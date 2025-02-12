@@ -1,15 +1,18 @@
 # CBD-Planet | Affiliate-Marketing Plattform
 
 <br>
-Responsive Frontend für eine Affiliate-Marketing Plattform für CBD-Produkte mit dazugehörigem Blog. Das Repository beinhaltet lediglich das statische Gerüst der Plattform.
+Responsives Frontend für eine Affiliate-Marketing Plattform für CBD-Produkte samt dazugehörigem Blog.
+<br>
+<br>
+ACHTUNG: Das Projekt wird aktuell grundlegend überarbeitet und daher fortlaufend verändert !!
 <br>
 <br>
 <br>
 
+![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 ### Screenshot 1 - Landingpage:
 
