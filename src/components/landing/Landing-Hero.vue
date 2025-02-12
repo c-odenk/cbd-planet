@@ -1,0 +1,87 @@
+<template>
+  <div class="landing-hero container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="landing-hero_col-1 col-12 col-lg-6">
+          <img src="@/assets/produkte.jpg" class="d-none d-lg-flex" />
+        </div>
+        <div class="landing-hero_col-2 col-12 col-lg-6">
+          <h1>
+            Das <span class="green"> therapeutische Potenzial </span> von
+            Cannabidiol
+          </h1>
+          <img src="@/assets/produkte.jpg" class="d-none d-lg-none" />
+          <p>
+            Immer stärker drängen CBD (Cannabidiol) haltige Produkte auf den
+            Markt, wenngleich noch immer Vorurteile dazu herrschen. Im Gegensatz
+            zu THC, verursacht CBD keine psychoaktive Wirkung, mit
+            Rauschzuständen ist bei dessen Anwendung also nicht zu rechnen -
+            erwerb und konsum sind absolut legal. Zwar hat CBD keine Zulassung
+            als Arzneimittel, dennoch werden ihm zahlreiche heilende Wirkungen
+            zugeschrieben. <br />
+
+            Die Aufklärung über eben diese Anwendungsbereiche und Wirkungen,
+            haben wir uns zur Aufgabe gemacht. Beiträge, aktuelle Studien und
+            persönliche Erfahrungen rund um das Thema CBD, findest du in unserem
+            Blog.
+          </p>
+          <router-link to="/"> zum Blog </router-link>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Hero-Section",
+};
+</script>
+
+<style lang="scss" scoped>
+@import "@/variables/Variables.scss";
+
+.landing-hero {
+  margin: 150px 0;
+
+  &_col-1 {
+    & img {
+      display: block;
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+
+  &_col-2 {
+    & h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 34px;
+      line-height: 45px;
+      text-transform: uppercase;
+
+      & .green {
+        color: $color-green;
+      }
+    }
+
+    & p {
+      margin: 30px 0 80px 0;
+      padding: 0;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: justify;
+    }
+
+    & a {
+      text-decoration: none;
+      margin: 0;
+      padding: 15px 70px;
+      font-size: 18px;
+      color: #fff;
+      background-color: $color-green;
+    }
+  }
+}
+</style>

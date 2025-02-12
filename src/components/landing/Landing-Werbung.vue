@@ -1,0 +1,56 @@
+<template>
+  <div class="landing-werbung container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="landing-werbung_col-1 col-12 col-md-5">
+          <router-link to="/">
+            <img src="@/assets/beard-placeholder-1.jpg" />
+          </router-link>
+        </div>
+        <div class="landing-werbung_col-2 col-12 col-md-7">
+          <router-link to="/">
+            <img src="@/assets/beard-placeholder-2.jpg" />
+          </router-link>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Werbung-Section",
+};
+</script>
+
+<style lang="scss" scoped>
+@import "@/variables/Variables.scss";
+
+.landing-werbung {
+  &_col-1 {
+    & a img {
+      width: 100%;
+      max-width: 100%;
+      height: 300px;
+      transition: all 0.2s;
+
+      &:hover {
+        transform: scale(1.01);
+      }
+    }
+  }
+
+  &_col-2 {
+    & a img {
+      width: 100%;
+      max-width: 100%;
+      height: 300px;
+      transition: all 0.2s;
+
+      &:hover {
+        transform: scale(1.01);
+      }
+    }
+  }
+}
+</style>
