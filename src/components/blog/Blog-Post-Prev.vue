@@ -27,9 +27,15 @@ export default {
   padding: 0 0 50px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 
-  @include respond(phone) {
+  @include respond(laptop) {
+  }
+
+  @include respond(tablet) {
     margin: 0 0 30px 0;
     padding: 0 0 30px 0;
+  }
+
+  @include respond(phone) {
   }
 
   & img {
@@ -37,15 +43,22 @@ export default {
     height: 350px;
     border-bottom: 5px solid #16a05d;
 
-    @include respond(phone) {
+    @include respond(tablet) {
       height: auto;
+    }
+
+    @include respond(phone) {
     }
   }
 
   & h2 {
-    padding: 50px 40px 20px 40px;
+    padding: 50px 40px 30px 40px;
     text-align: left;
     text-decoration: none;
+
+    @include respond(tablet) {
+      padding: 20px;
+    }
 
     @include respond(phone) {
       padding: 20px;
@@ -53,11 +66,12 @@ export default {
   }
 
   & p {
-    margin: 0 0 30px 0;
+    margin: 0 0 40px 0;
     padding: 0px 40px 0 40px;
     text-align: justify;
 
-    @include respond(phone) {
+    @include respond(tablet) {
+      margin: 0 0 20px 0;
       padding: 0 20px;
     }
   }
@@ -72,7 +86,7 @@ export default {
     letter-spacing: 1px;
     font-weight: 500;
 
-    @include respond(phone) {
+    @include respond(tablet) {
       padding: 0 20px;
     }
   }

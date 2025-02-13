@@ -56,6 +56,10 @@ export default {
   &_row {
     margin: 75px 0 25px 0;
 
+    @include respond(tablet) {
+      margin: 50px 0 0 0;
+    }
+
     @include respond(phone) {
       // margin: 0 0 30px 0;
     }

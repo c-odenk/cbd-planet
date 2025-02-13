@@ -26,8 +26,21 @@ export default {
   &_row {
     display: flex;
     flex-direction: row;
+    align-items: center;
+
+    @include respond(laptop) {
+    }
+
+    @include respond(tablet) {
+      justify-content: center;
+    }
+
+    @include respond(phone) {
+    }
 
     & p {
+      margin: 0;
+      padding: 0;
       color: #fff;
     }
 

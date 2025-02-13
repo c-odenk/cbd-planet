@@ -22,6 +22,10 @@ export default {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   padding: 20px;
 
+  @include respond(tablet) {
+    background-color: #f5f6fb;
+  }
+
   & h2 {
     padding-bottom: 10px;
     margin-bottom: 20px;
