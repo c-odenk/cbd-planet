@@ -1,24 +1,20 @@
 <template>
-  <article class="blog-artikel-prev">
-    <img :src="require(`@/assets/${this.Artikel.ArtikelImage}`)" />
-    <h2>{{ this.Artikel.ArtikelTitel }}</h2>
-    <p>{{ this.Artikel.ArtikelPrev }}</p>
+  <article class="blog-post-prev">
+    <img :src="require(`@/assets/${post.Titelbild}`)" alt="Blog Post Image" />
+    <h2>{{ post.Titel }}</h2>
+    <p>{{ post.Inhalt }}</p>
     <router-link to="/#"> Weiterlesen </router-link>
   </article>
 </template>
 
 <script>
 export default {
-  name: "Blog-Artikel-Prev",
-  data: function () {
-    return {
-      Artikel: {
-        ArtikelImage: "blog-image-1.jpg",
-        ArtikelTitel: "Cannabiniod-Rezeptoren: bekannte Wirk von CBD",
-        ArtikelPrev:
-          "In unserem ersten Artikel wurde bereits erklärt, dass Cannabidiol (CBD) mit den körpereigenen Cannabiniod-Rezeptoren interagiert. Diese Cannabiniod-Rezeptoren finden sich vielerorts im menschlichen Körper, weshalb das CBD seine Wirkung gleich an mehreren Stellen entfalten kann ...",
-      },
-    };
+  name: "Blog-Post-Prev",
+  props: {
+    post: {
+      type: Object,
+      required: true,
+    },
   },
 };
 </script>
@@ -26,8 +22,8 @@ export default {
 <style lang="scss" scoped>
 @import "@/variables/Variables.scss";
 
-.blog-artikel-prev {
-  margin: 0;
+.blog-post-prev {
+  margin: 0 0 50px 0;
   padding: 0 0 50px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 

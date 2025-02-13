@@ -1,7 +1,7 @@
 <template>
   <div class="impressum container">
     <div class="row">
-      <div class="col-12">
+      <div class="col-lg-12">
         <h2>
           Impressum <br />
           Angaben gemäß § 5 TMG:
@@ -121,6 +121,10 @@ export default {
 
 .impressum {
   margin: 100px auto 75px auto;
+
+  @include respond(laptop) {
+    margin: 50px auto 40px auto;
+  }
 
   @include respond(tablet) {
     margin: 30px auto 25px auto;

@@ -3,7 +3,7 @@
 </template>
 
 <style lang="scss">
-@import "@/variables/Variables.scss";
+@import "@/variables/variables.scss";
 #app {
 }
 
@@ -27,6 +27,8 @@ a {
   text-decoration: none;
   margin: 0;
   padding: 0;
+
+  // color: $font-color;
 
   @include respond(tablet) {
     font-size: $font-size-p-sm;

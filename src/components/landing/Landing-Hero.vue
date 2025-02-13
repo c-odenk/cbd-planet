@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/variables/Variables.scss";
+@import "@/variables/variables.scss";
 
 .landing-hero {
   margin: 150px 0;
@@ -90,7 +90,6 @@ export default {
 
     & a {
       text-decoration: none;
-      margin: 0;
       padding: 15px 70px;
       font-size: 18px;
       color: #fff;

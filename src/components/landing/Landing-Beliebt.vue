@@ -140,8 +140,10 @@ export default {
   }
 
   &_row-2.row > * {
-    padding-right: calc(var(--bs-gutter-x) * 0.2);
-    padding-left: calc(var(--bs-gutter-x) * 0.2);
+    @include respond(tablet) {
+      padding-right: calc(var(--bs-gutter-x) * 0.2);
+      padding-left: calc(var(--bs-gutter-x) * 0.2);
+    }
   }
 }
 </style>
