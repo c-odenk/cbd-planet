@@ -2,7 +2,7 @@
   <div class="view-blog">
     <Header />
     <Wallpaper />
-    <div class="container">
+    <div class="container-xl">
       <div class="view-blog_row row">
         <main class="col-md-8">
           <BlogPostPrev
@@ -57,7 +57,7 @@ export default {
     margin: 75px 0 25px 0;
 
     @include respond(tablet) {
-      margin: 50px 0 0 0;
+      margin: 30px 0 0 0;
     }
 
     @include respond(phone) {

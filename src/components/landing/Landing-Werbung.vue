@@ -28,6 +28,10 @@ export default {
 
 .landing-werbung {
   &_col-1 {
+    @include respond(phone) {
+      margin: 0 0 10px 0;
+    }
+
     & a img {
       width: 100%;
       max-width: 100%;
@@ -36,6 +40,10 @@ export default {
 
       @include respond(tablet) {
         height: 200px;
+      }
+
+      @include respond(phone) {
+        height: auto;
       }
 
       &:hover {
@@ -60,6 +68,10 @@ export default {
 
       @include respond(tablet) {
         height: 200px;
+      }
+
+      @include respond(phone) {
+        height: auto;
       }
 
       &:hover {

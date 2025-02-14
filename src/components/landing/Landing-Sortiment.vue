@@ -67,6 +67,10 @@ export default {
     margin: 100px 0 15px 0;
   }
 
+  @include respond(phone) {
+    display: none;
+  }
+
   &_row-1 {
     margin: 0 0 50px 0;
 

@@ -53,7 +53,7 @@ export default {
   }
 
   @include respond(phone) {
-    height: 20vh;
+    // height: 20vh;
   }
 
   &_col-1 {
@@ -73,6 +73,13 @@ export default {
       line-height: 45px;
       font-weight: 700;
       text-transform: uppercase;
+      letter-spacing: $letter-spacing;
+
+      @include respond(phone) {
+        // text-align: left;
+        font-size: 28px;
+        line-height: 1.2;
+      }
 
       & .green {
         color: $color-green;
@@ -85,6 +92,10 @@ export default {
 
       @include respond(laptop) {
         margin: 20px 0px 50px 0px;
+      }
+
+      @include respond(phone) {
+        text-align: left;
       }
     }
 

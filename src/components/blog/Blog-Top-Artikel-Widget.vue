@@ -1,5 +1,5 @@
 <template>
-  <div class="blog-top-artikel-widget">
+  <div class="blog-top-posts-widget">
     <h2>Top Beiträge</h2>
     <ul>
       <li><router-link to="/#"> #1: Beitrag 1 </router-link></li>
@@ -11,14 +11,14 @@
 
 <script>
 export default {
-  name: "Blog-Top-Artikel-Widget",
+  name: "Blog-Top-Posts-Widget",
 };
 </script>
 
 <style lang="scss" scoped>
 @import "@/variables/Variables.scss";
 
-.blog-top-artikel-widget {
+.blog-top-posts-widget {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   padding: 20px;
 

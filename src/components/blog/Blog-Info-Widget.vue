@@ -1,6 +1,6 @@
 <template>
   <div class="blog-info-widget">
-    <h2>Über CBD-Planet</h2>
+    <!-- <h2>Über CBD-Planet</h2> -->
     <p>
       CBD, CBC, THC - die Verwechslungsgefahr ist Groß, Vorurteile gibt es
       viele. Um mit diesen Vorurteilen aufzuräumen, berichten wir regelmäßig

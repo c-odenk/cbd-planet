@@ -9,7 +9,11 @@
       </div>
 
       <div class="landing-beliebt_row-2 row">
-        <div class="col-3" v-for="(Beliebt, index) in Beliebt" :key="index">
+        <div
+          class="col-12 col-md-3"
+          v-for="(Beliebt, index) in Beliebt"
+          :key="index"
+        >
           <div class="card">
             <router-link to="/">
               <img
@@ -97,6 +101,14 @@ export default {
   }
 
   &_row-2 {
+    @include respond(tablet) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
     & .card {
       border: 1px solid rgba(0, 0, 0, 0.07);
       box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
@@ -114,6 +126,10 @@ export default {
 
           @include respond(tablet) {
             height: 200px;
+          }
+
+          @include respond(tablet) {
+            height: auto;
           }
         }
 

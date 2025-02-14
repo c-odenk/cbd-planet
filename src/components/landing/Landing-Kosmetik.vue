@@ -57,6 +57,10 @@ export default {
     padding: 40px 0 50px 0;
   }
 
+  @include respond(phone) {
+    padding: 50px 10px 40px 10px;
+  }
+
   &_col-1 {
     & h2 {
       font-size: 34px;
@@ -68,19 +72,23 @@ export default {
       @include respond(tablet) {
         margin: 0 0 60px 0;
       }
+
+      @include respond(phone) {
+        margin: 0 0 40px 0;
+      }
     }
 
     & p {
       margin: 20px 0 40px 0;
 
-      @include respond(tablet) {
+      @include respond(phone) {
         margin: 20px 0 30px 0;
       }
     }
 
     & button {
-      padding: 8px 20px;
       min-width: 200px;
+      padding: 8px 20px;
       border: none;
       font-size: 18px;
       border-radius: 0px;
@@ -88,6 +96,12 @@ export default {
       @include respond(tablet) {
         display: block;
         margin: 0 auto;
+      }
+
+      @include respond(phone) {
+        min-width: 100px;
+        padding: 8px 20px;
+        font-size: 14px;
       }
     }
 
@@ -98,6 +112,11 @@ export default {
 
       @include respond(tablet) {
         width: 60%;
+        margin: 40px auto;
+      }
+
+      @include respond(phone) {
+        width: 90%;
         margin: 40px auto;
       }
     }

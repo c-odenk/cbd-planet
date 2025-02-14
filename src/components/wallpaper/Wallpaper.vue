@@ -37,7 +37,7 @@ export default {
   }
 
   @include respond(phone) {
-    height: 20vh;
+    height: 25vh;
   }
 
   &_heading {

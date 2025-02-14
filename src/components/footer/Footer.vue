@@ -1,7 +1,7 @@
 <template>
   <footer class="footer container-fluid">
     <div class="footer_row container">
-      <p>Copyright &copy; 2019 CBD Planet. Alle Rechte vorbehalten.</p>
+      <p>Copyright &copy; 2024 CBD Planet. Alle Rechte vorbehalten.</p>
       <ul>
         <li><router-link to="/"> AGB </router-link></li>
         <li><router-link to="/impressum"> Impressum </router-link></li>
@@ -23,6 +23,10 @@ export default {
   padding: 30px 0px;
   background-color: rgb(33, 33, 33);
 
+  @include respond(phone) {
+    padding: 35px 5px;
+  }
+
   &_row {
     display: flex;
     flex-direction: row;
@@ -36,6 +40,8 @@ export default {
     }
 
     @include respond(phone) {
+      flex-direction: column;
+      align-items: flex-start;
     }
 
     & p {
@@ -50,6 +56,12 @@ export default {
       list-style: none;
       margin: 0;
       padding: 0;
+
+      @include respond(phone) {
+        margin: 15px 0 0 0;
+
+        display: none;
+      }
     }
 
     & a {
