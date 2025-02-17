@@ -58,19 +58,19 @@ export default {
   }
 
   @include respond(phone) {
-    padding: 50px 10px 40px 10px;
+    padding: 50px 10px 50px 10px;
   }
 
   &_col-1 {
     & h2 {
-      font-size: 34px;
       margin: 0 0 30px 0;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 1px;
 
       @include respond(tablet) {
-        margin: 0 0 60px 0;
+        margin: 0 0 40px 0;
+        text-align: center;
       }
 
       @include respond(phone) {
@@ -82,7 +82,8 @@ export default {
       margin: 20px 0 40px 0;
 
       @include respond(phone) {
-        margin: 20px 0 30px 0;
+        margin: 20px 0 40px 0;
+        text-align: justify;
       }
     }
 
@@ -117,7 +118,7 @@ export default {
 
       @include respond(phone) {
         width: 90%;
-        margin: 40px auto;
+        margin: 50px auto;
       }
     }
   }

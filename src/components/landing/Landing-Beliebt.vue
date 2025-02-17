@@ -4,7 +4,7 @@
       <div class="landing-beliebt_row-1 row">
         <div class="col-lg-8 offset-lg-2 col-md-12">
           <h2 id="beliebt">Beliebte <span class="green"> Produkte </span></h2>
-          <p>Empfohlene Artikel, die andere Kunden oft erneut kaufen.</p>
+          <p>Empfohlene Artikel, die andere Kunden oft erneut kaufen:</p>
         </div>
       </div>
 
@@ -38,22 +38,22 @@ export default {
     return {
       Beliebt: [
         {
-          Produktname: "Produktname 1",
+          Produktname: "Produktname",
           Preis: 19.0,
           Produktbild: "product-beard-oil.png",
         },
         {
-          Produktname: "Produktname 2",
+          Produktname: "Produktname",
           Preis: 19.0,
           Produktbild: "product-beard-oil.png",
         },
         {
-          Produktname: "Produktname 2",
+          Produktname: "Produktname",
           Preis: 19.0,
           Produktbild: "cbd-oel.jpg",
         },
         {
-          Produktname: "Produktname 2",
+          Produktname: "Produktname",
           Preis: 19.0,
           Produktbild: "cbd-oel.jpg",
         },
@@ -81,14 +81,27 @@ export default {
     margin: 0 0 50px 0;
 
     @include respond(tablet) {
-      margin: 0 0 30px 0;
+      margin: 0 0 20px 0;
     }
 
     & h2 {
       font-size: 40px;
-      text-align: center;
       font-weight: 700;
       text-transform: uppercase;
+      text-align: center;
+
+      @include respond(tablet) {
+        margin: 0 0 5px 0;
+        padding: 0;
+        font-size: 30px;
+        // text-align: left;
+      }
+
+      @include respond(phone) {
+        margin: 0 0 30px 0;
+        font-size: 25px;
+        text-align: center;
+      }
 
       & .green {
         color: $color-green;
@@ -97,6 +110,10 @@ export default {
 
     & p {
       text-align: center;
+
+      @include respond(tablet) {
+        // text-align: left;
+      }
     }
   }
 
@@ -109,11 +126,23 @@ export default {
       white-space: nowrap;
     }
 
+    @include respond(phone) {
+      // margin: 0 20px;
+    }
+
     & .card {
       border: 1px solid rgba(0, 0, 0, 0.07);
       box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
       text-align: center;
       transition: all 0.3s;
+
+      @include respond(tablet) {
+        box-shadow: none;
+      }
+
+      @include respond(phone) {
+        box-shadow: none;
+      }
 
       & a {
         color: #000;
@@ -128,8 +157,8 @@ export default {
             height: 200px;
           }
 
-          @include respond(tablet) {
-            height: auto;
+          @include respond(phone) {
+            height: 400px;
           }
         }
 
@@ -137,14 +166,36 @@ export default {
           margin: 0;
           padding: 15px 0;
 
+          @include respond(tablet) {
+            padding: 20px 0 20px 0;
+          }
+
+          @include respond(phone) {
+            padding: 35px 0 20px 0;
+          }
+
           & h5 {
             display: block;
-            text-align: center;
-            margin: 0;
+            margin: 0 0 1px 0;
             padding: 0;
             font-size: 18px;
             font-weight: 500;
-            margin-bottom: 1px;
+            text-align: center;
+
+            @include respond(tablet) {
+            }
+
+            @include respond(phone) {
+            }
+          }
+
+          & p {
+            margin: 0;
+            padding: 0;
+
+            @include respond(tablet) {
+              font-size: 16px;
+            }
           }
         }
       }
@@ -159,6 +210,11 @@ export default {
     @include respond(tablet) {
       padding-right: calc(var(--bs-gutter-x) * 0.2);
       padding-left: calc(var(--bs-gutter-x) * 0.2);
+    }
+
+    @include respond(phone) {
+      padding-right: calc(var(--bs-gutter-x) * 0.5);
+      padding-left: calc(var(--bs-gutter-x) * 0.5);
     }
   }
 }

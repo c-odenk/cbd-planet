@@ -18,8 +18,8 @@
             Rauschzuständen ist bei dessen Anwendung also nicht zu rechnen -
             erwerb und konsum sind absolut legal. Zwar hat CBD keine Zulassung
             als Arzneimittel, dennoch werden ihm zahlreiche heilende Wirkungen
-            zugeschrieben. <br />
-
+            zugeschrieben.
+            <br />
             Die Aufklärung über eben diese Anwendungsbereiche und Wirkungen,
             haben wir uns zur Aufgabe gemacht. Beiträge, aktuelle Studien und
             persönliche Erfahrungen rund um das Thema CBD, findest du in unserem
@@ -70,15 +70,21 @@ export default {
       margin: 0;
       padding: 0;
       font-size: 34px;
-      line-height: 45px;
-      font-weight: 700;
       text-transform: uppercase;
       letter-spacing: $letter-spacing;
+      line-height: 45px;
+      font-weight: 700;
+
+      @include respond(tablet) {
+        margin: 0 0 30px 0;
+        font-size: 30px;
+      }
 
       @include respond(phone) {
-        // text-align: left;
-        font-size: 28px;
-        line-height: 1.2;
+        margin: 0 0 40px 0;
+        font-size: 25px;
+        line-height: 35px;
+        text-align: center;
       }
 
       & .green {
@@ -87,7 +93,7 @@ export default {
     }
 
     & p {
-      margin: 30px 0 80px 0;
+      margin: 30px 0 60px 0;
       text-align: justify;
 
       @include respond(laptop) {
@@ -95,7 +101,7 @@ export default {
       }
 
       @include respond(phone) {
-        text-align: left;
+        text-align: justify;
       }
     }
 

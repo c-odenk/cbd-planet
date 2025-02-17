@@ -57,32 +57,41 @@ export default {
 @import "@/variables/Variables.scss";
 
 .landing-sortiment {
-  margin: 200px 0 20px 0;
+  margin: 150px 0 30px 0;
 
   @include respond(laptop) {
-    margin: 120px 0 15px 0;
+    margin: 100px 0;
   }
 
   @include respond(tablet) {
-    margin: 100px 0 15px 0;
-  }
-
-  @include respond(phone) {
-    display: none;
+    margin: 75px 0 20px 0;
   }
 
   &_row-1 {
     margin: 0 0 50px 0;
 
     @include respond(tablet) {
-      margin: 0 0 30px 0;
+      margin: 0 0 20px 0;
     }
 
     & h2 {
       font-size: 40px;
-      text-align: center;
       font-weight: 700;
       text-transform: uppercase;
+      text-align: center;
+
+      @include respond(tablet) {
+        margin: 0 0 5px 0;
+        padding: 0;
+        font-size: 30px;
+        // text-align: left;
+      }
+
+      @include respond(phone) {
+        margin: 0 0 30px 0;
+        font-size: 25px;
+        text-align: center;
+      }
 
       & .green {
         color: $color-green;
@@ -91,15 +100,39 @@ export default {
 
     & p {
       text-align: center;
+
+      @include respond(tablet) {
+        // text-align: left;
+      }
     }
   }
 
   &_row-2 {
+    @include respond(tablet) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    @include respond(phone) {
+      // margin: 0 20px;
+    }
+
     & .card {
       border: 1px solid rgba(0, 0, 0, 0.07);
       box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
       text-align: center;
       transition: all 0.3s;
+
+      @include respond(tablet) {
+        box-shadow: none;
+      }
+
+      @include respond(phone) {
+        box-shadow: none;
+      }
 
       & a {
         color: #000;
@@ -113,20 +146,46 @@ export default {
           @include respond(tablet) {
             height: 200px;
           }
+
+          @include respond(phone) {
+            height: 400px;
+          }
         }
 
         & .card-body {
           margin: 0;
           padding: 15px 0;
 
+          @include respond(tablet) {
+            padding: 20px 0 20px 0;
+          }
+
+          @include respond(phone) {
+            padding: 35px 0 20px 0;
+          }
+
           & h5 {
-            margin: 0;
+            display: block;
+            margin: 0 0 1px 0;
             padding: 0;
             font-size: 18px;
-            display: block;
-            text-align: center;
             font-weight: 500;
-            margin-bottom: 1px;
+            text-align: center;
+
+            @include respond(tablet) {
+            }
+
+            @include respond(phone) {
+            }
+          }
+
+          & p {
+            margin: 0;
+            padding: 0;
+
+            @include respond(tablet) {
+              font-size: 16px;
+            }
           }
         }
       }
@@ -141,6 +200,11 @@ export default {
     @include respond(tablet) {
       padding-right: calc(var(--bs-gutter-x) * 0.2);
       padding-left: calc(var(--bs-gutter-x) * 0.2);
+    }
+
+    @include respond(phone) {
+      padding-right: calc(var(--bs-gutter-x) * 0.5);
+      padding-left: calc(var(--bs-gutter-x) * 0.5);
     }
   }
 }
