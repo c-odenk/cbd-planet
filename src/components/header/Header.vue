@@ -75,6 +75,10 @@ export default {
     justify-content: space-between;
     align-items: center;
 
+    @include respond(tablet) {
+      // background-color: red;
+    }
+
     @include respond(phone) {
       width: 100%;
     }
@@ -104,6 +108,11 @@ export default {
         font-size: 30px;
         font-weight: 700;
         text-transform: uppercase;
+
+        @include respond(tablet) {
+          margin: 0 30px 0 5px;
+          font-size: 28px;
+        }
 
         @include respond(phone) {
           margin: 0 0 0 10px;
