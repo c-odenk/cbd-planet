@@ -11,7 +11,11 @@
         </div>
       </div>
       <div class="landing-sortiment_row-2 row">
-        <div class="col-3" v-for="(Sortiment, index) in Sortiment" :key="index">
+        <div
+          class="col-12 col-md-3"
+          v-for="(Sortiment, index) in Sortiment"
+          :key="index"
+        >
           <div class="card">
             <router-link to="/">
               <img
@@ -60,15 +64,19 @@ export default {
   margin: 150px 0 30px 0;
 
   @include respond(laptop) {
-    margin: 100px 0;
+    margin: 150px 0 30px 0;
   }
 
   @include respond(tablet) {
-    margin: 100px 0 20px 0;
+    margin: 10px 0 20px 0;
   }
 
   &_row-1 {
     margin: 0 0 50px 0;
+
+    @include respond(laptop) {
+      margin: 0 0 30px 0;
+    }
 
     @include respond(tablet) {
       margin: 0 0 20px 0;
@@ -84,13 +92,12 @@ export default {
         margin: 0 0 5px 0;
         padding: 0;
         font-size: 30px;
-        // text-align: left;
       }
 
       @include respond(phone) {
-        margin: 0 0 30px 0;
+        margin: 0 0 10px 0;
         font-size: 25px;
-        text-align: center;
+        // text-align: center;
       }
 
       & .green {
@@ -102,6 +109,10 @@ export default {
       text-align: center;
 
       @include respond(tablet) {
+        // text-align: left;
+      }
+
+      @include respond(phone) {
         // text-align: left;
       }
     }
@@ -203,8 +214,8 @@ export default {
     }
 
     @include respond(phone) {
-      padding-right: calc(var(--bs-gutter-x) * 0.5);
-      padding-left: calc(var(--bs-gutter-x) * 0.5);
+      padding-right: calc(var(--bs-gutter-x) * 0.75);
+      padding-left: calc(var(--bs-gutter-x) * 0.75);
     }
   }
 }

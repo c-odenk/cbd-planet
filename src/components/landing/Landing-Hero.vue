@@ -19,7 +19,7 @@
             erwerb und konsum sind absolut legal. Zwar hat CBD keine Zulassung
             als Arzneimittel, dennoch werden ihm zahlreiche heilende Wirkungen
             zugeschrieben.
-            <br />
+            <br /><br />
             Die Aufklärung über eben diese Anwendungsbereiche und Wirkungen,
             haben wir uns zur Aufgabe gemacht. Beiträge, aktuelle Studien und
             persönliche Erfahrungen rund um das Thema CBD, findest du in unserem
@@ -45,7 +45,7 @@ export default {
   margin: 150px 0;
 
   @include respond(laptop) {
-    margin: 100px 0;
+    margin: 130px 0 150px 0;
   }
 
   @include respond(tablet) {

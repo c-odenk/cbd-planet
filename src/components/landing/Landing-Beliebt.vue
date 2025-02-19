@@ -80,6 +80,10 @@ export default {
   &_row-1 {
     margin: 0 0 50px 0;
 
+    @include respond(laptop) {
+      margin: 0 0 30px 0;
+    }
+
     @include respond(tablet) {
       margin: 0 0 20px 0;
     }
@@ -98,7 +102,7 @@ export default {
       }
 
       @include respond(phone) {
-        margin: 0 0 30px 0;
+        margin: 0 0 10px 0;
         font-size: 25px;
         text-align: center;
       }
@@ -213,8 +217,8 @@ export default {
     }
 
     @include respond(phone) {
-      padding-right: calc(var(--bs-gutter-x) * 0.5);
-      padding-left: calc(var(--bs-gutter-x) * 0.5);
+      padding-right: calc(var(--bs-gutter-x) * 0.75);
+      padding-left: calc(var(--bs-gutter-x) * 0.75);
     }
   }
 }
