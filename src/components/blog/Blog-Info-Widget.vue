@@ -29,6 +29,10 @@ export default {
     margin: 0 0 20px 0;
   }
 
+  @include respond(phone) {
+    margin: 0 0 30px 0;
+  }
+
   & h2 {
     padding-bottom: 10px;
     margin-bottom: 20px;

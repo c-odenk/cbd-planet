@@ -15,6 +15,6 @@ export const BlogPosts = [
     Titel: "Beitrag: Überschrift",
     Titelbild: "blog-image-1.jpg",
     Inhalt:
-      "Duis autem eumre dolor hendrerit vulputate veliesse molestie consequat vel illum dolore at vero eros et accumsan et iusto odio dignissim. Qui blandit praesent luptatum zzril delenit augue duis dolore feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elitsed nibh euismod tincidunt laoreet dolore magna aliquam erat volutpat ...",
+      "Duis autem eumre dolor hendrerit vulputate veliesse molestie consequat vel illum dolore at vero eros et accumsan et iusto odio dignissim. Qui blandit praesent luptatum zzril delenit augue duis dolore feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elitsed nibh euismod tincidunt laoreet dolore magna ...",
   },
 ];

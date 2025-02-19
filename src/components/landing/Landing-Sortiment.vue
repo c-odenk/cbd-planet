@@ -68,7 +68,7 @@ export default {
   }
 
   @include respond(tablet) {
-    margin: 10px 0 20px 0;
+    margin: 100px 0 20px 0;
   }
 
   &_row-1 {

@@ -101,7 +101,7 @@ export default {
       }
 
       @include respond(phone) {
-        text-align: justify;
+        text-align: left;
       }
     }
 
@@ -112,8 +112,13 @@ export default {
       color: #fff;
       background-color: $color-green;
 
+      @include respond(laptop) {
+        // padding: 12.5px 45px;
+      }
+
       @include respond(tablet) {
-        padding: 12.5px 45px;
+        padding: 10px 25px;
+        font-size: 16px;
       }
     }
   }

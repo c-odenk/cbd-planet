@@ -147,7 +147,7 @@ export default {
 
       @include respond(phone) {
         flex-direction: column;
-        padding: 20px 0;
+        padding: 50px 0 25px 0;
       }
 
       & li {

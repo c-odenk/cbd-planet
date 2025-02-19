@@ -36,6 +36,7 @@ export default {
   }
 
   @include respond(phone) {
+    margin: 0 0 30px 0;
   }
 
   & img {

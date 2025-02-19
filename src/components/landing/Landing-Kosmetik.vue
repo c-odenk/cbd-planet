@@ -97,6 +97,7 @@ export default {
       @include respond(tablet) {
         display: block;
         margin: 0 auto;
+        font-size: 16px;
       }
 
       @include respond(phone) {
