@@ -17,13 +17,11 @@ const routes = [
     name: "Blog",
     component: () => import("../views/View-Blog.vue"),
   },
-  /*
   {
-    path: "/about",
-    name: "about",
-    component: () => import('../views/View-Stromaggregat.vue')
+    path: "/blogpost",
+    name: "BlogPost",
+    component: () => import("../views/View-BlogPost.vue"),
   },
-  */
 ];
 
 const router = createRouter({

@@ -3,7 +3,7 @@
     <img :src="require(`@/assets/${post.Titelbild}`)" alt="Blog Post Image" />
     <h2>{{ post.Titel }}</h2>
     <p>{{ post.Inhalt }}</p>
-    <router-link to="/#"> Weiterlesen </router-link>
+    <router-link to="/blogpost"> Weiterlesen </router-link>
   </article>
 </template>
 
