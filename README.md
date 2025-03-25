@@ -1,24 +1,21 @@
-# cbd-planet
+# CBD-Planet | Affiliate-Marketing Plattform
 
-## Project setup
-```
-npm install
-```
+<br>
+Responsives Frontend für eine Affiliate-Marketing Plattform für CBD-Produkte mit dazugehörigem Blog.
+<br>
+<br>
+ACHTUNG: Das Projekt wird aktuell grundlegend überarbeitet und daher fortlaufend verändert !!
+<br>
+<br>
+<br>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Screenshot - Landingpage:
 
-### Lints and fixes files
-```
-npm run lint
-```
+![Bildschirmfoto 2025-02-12 um 02 16 51 (2)](https://github.com/user-attachments/assets/73e6ecf1-ef16-4e3d-b30c-382631ff7724)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+\*\* Dieses Projekt ist im Rahmen eines Onlinekurses zum Thema Wordpress Entwicklung entstanden. Das Content-Management-System (CMS) ist in diesem Repository nicht enthalten.
