@@ -47,8 +47,6 @@ export default {
   padding: 150px 0px;
   background-color: rgb(46, 194, 158);
 
-  display: none;
-
   @include respond(laptop) {
     margin: 70px 0 0 0;
     padding: 90px 0;

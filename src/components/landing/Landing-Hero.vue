@@ -44,8 +44,6 @@ export default {
 .landing-hero {
   margin: 150px 0;
 
-  display: none;
-
   @include respond(laptop) {
     margin: 130px 0 150px 0;
   }
