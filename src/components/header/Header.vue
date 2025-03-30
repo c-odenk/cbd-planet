@@ -11,7 +11,6 @@
       <nav class="header_navigation">
         <ul v-show="isNavOpen">
           <li><router-link to="/#"> Startseite </router-link></li>
-          <li><router-link to="/"> Shop </router-link></li>
           <li><router-link to="/blog"> Blog </router-link></li>
           <li><router-link to="/impressum"> Kontakt </router-link></li>
         </ul>
@@ -51,7 +50,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/variables/Variables.scss";
+@use "../../variables/Variables.scss" as *;
 
 .header {
   display: flex;
@@ -74,10 +73,6 @@ export default {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    @include respond(tablet) {
-      // background-color: red;
-    }
 
     @include respond(phone) {
       width: 100%;
@@ -128,13 +123,13 @@ export default {
         margin: 0 10px 10px 0;
         padding: 0;
         font-size: 30px;
+        cursor: pointer;
       }
     }
   }
 
   &_navigation {
     @include respond(phone) {
-      // display: none;
       width: 100%;
     }
 
@@ -147,12 +142,13 @@ export default {
 
       @include respond(phone) {
         flex-direction: column;
-        padding: 50px 0 25px 0;
+        padding: 20px 0;
       }
 
       & li {
         @include respond(phone) {
-          padding: 5px 5px;
+          padding: 10px 5px;
+          margin-bottom: 5px;
         }
 
         & a {
@@ -166,7 +162,9 @@ export default {
           }
 
           @include respond(phone) {
-            padding: 100px 10px;
+            padding: 8px 10px;
+            display: block;
+            width: 100%;
           }
 
           &:hover {

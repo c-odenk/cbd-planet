@@ -27,6 +27,23 @@ const routes = [
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    // Wenn die Zurück- oder Vorwärts-Taste im Browser verwendet wurde und es eine gespeicherte Position gibt
+    if (savedPosition) {
+      return savedPosition;
+    }
+
+    // Wenn ein Hash/Anker in der URL vorhanden ist (z.B. /some-page#section1)
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: "smooth",
+      };
+    }
+
+    // Ansonsten zum Seitenanfang scrollen
+    return { top: 0 };
+  },
 });
 
 export default router;

@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/variables/Variables.scss";
+@use "../variables/Variables.scss" as *;
 
 .view-blogpost {
 }

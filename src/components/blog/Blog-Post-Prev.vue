@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/variables/Variables.scss";
+@use "../../variables/Variables.scss" as *;
 
 .blog-post-prev {
   margin: 0 0 50px 0;

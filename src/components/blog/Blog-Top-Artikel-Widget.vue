@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/variables/Variables.scss";
+@use "../../variables/Variables.scss" as *;
 
 .blog-top-posts-widget {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);

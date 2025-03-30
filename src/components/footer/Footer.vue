@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/variables/Variables.scss";
+@use "../../variables/Variables.scss" as *;
 
 .footer {
   padding: 30px 0px;

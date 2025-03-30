@@ -117,7 +117,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/variables/Variables.scss";
+@use "../../variables/Variables.scss" as *;
 
 .impressum {
   margin: 100px auto 75px auto;
