@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use "../../variables/Variables.scss" as *;
+@use "../../variables/variables.scss" as *;
 
 .landing-werbung {
   &_col-1 {

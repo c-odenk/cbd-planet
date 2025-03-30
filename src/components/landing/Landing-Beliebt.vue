@@ -186,7 +186,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use "../../variables/Variables.scss" as *;
+@use "../../variables/variables.scss" as *;
 
 .landing-beliebt {
   margin: 150px 0 150px 0;
