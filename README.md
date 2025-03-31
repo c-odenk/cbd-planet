@@ -7,6 +7,9 @@ Responsives Frontend für eine Affiliate-Marketing Plattform für CBD-Produkte m
 ACHTUNG: Das Projekt wird aktuell grundlegend überarbeitet und daher fortlaufend verändert !!
 <br>
 <br>
+Zu finden unter: https://cbd-planet.netlify.app/
+<br>
+<br>
 <br>
 
 ![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
